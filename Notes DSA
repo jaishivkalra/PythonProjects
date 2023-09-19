@@ -1,0 +1,88 @@
+----
+Algo -> Steps to solve a problem
+Flowchart -> Diagramic representation of algo
+Steps to solve a problem = Think -> Algo -> User Friendly Language -> Compile -> MLL
+FC-> oval start end, parellelogram input output, rectangle calculate initiate everything, diamond conditions loops
+-----
+#include is preprocessor directive include file before program
+choose 1 ns for no confusion of def of variables
+int 4 bytes =32 bits( binary) -> +ve normal -> -ve 2's compliment -> MSB (leftmost is 1? =-ve: +ve)
+char =8 bit = 1 byt1 =2^8 = 256(ascii)
+-----------
+Explicit Typecasting more precision(bigger data type is calculated then converted to your choic of data)
+eg float + int = float + float = float/int
+char 'A' = 65(ascii) stored as this
+if you print int of ch = 65
+implicit me you specify within calc 
+float c;
+eg int  a = float b + (int)c
+this (int) is a casting operator
+for float to char lets say a =65.35 char a   = 65 = 'A'
+----------
+function : block of code
+---------- 
+Time complexity : time taken by fn or algo as a fn of length of input
+O -> upper bound -> O(n)
+Theta Q -> avg
+Omega -> lower bound
+----------
+&a prints address of a
+*p prints value of var at add p
+empty elements of array have 0
+int n[2]={1,2};
+-----------
+reference variable nickname of another variable 
+int &c = n
+c ke liye no more space allocated it exists because of n
+if c++, n++
+int &c can not be equal to constant like 6
+Call by value lets say fn using a variable int n now the n address is not same as n address inside the fn
+if n = 5
+increment(int n)
+increment(n) , n =5
+but if increment(int &n)
+increment(n)
+n=6
+This is call by reference
+-------------
+find unique use XOR
+------------
+STL
+vector -> made array(dynamic) like structures easy
+dynamic array method 1 is take int n and declare array int *arr = new int[n]
+another is vector.
+using the former method is not ideal as if user enters 50 elements size and the code still needs to push the 51st element then the code breaks.
+vector works like this: size increases by 1 when you push_back and capacity increases exponentially like if size goes from 2-> 3, 4->5 then capacity goes from 2->4->8
+.capacity(),.Push_back().pop_back()
+one to print element i is v[i] and another is v.at(i)
+v.clear() flushes all elements
+vector <int> v(5,-1) = [-1,-1,-1,-1,-1]
+to copy vector: vector<int>arr6(arr5);
+v[0] = v.front()
+v[v.size() - 1] = v.back()
+print:
+for(auto it:v){
+    cout<<it<<" ";
+}
+-------------
+2d array
+converted to 1d array has formula (c*i) +j c is total columns and i and j are corresponding row and col numbers
+2d array need to initialize with atleast column size
+with vector: vector<vector<int>> arr1(4,vector(5,0))
+for(auto it:arr){
+   for(auto it1:it){
+      cout<<it;
+   }
+}
+--------------
+unordered_map <int,int> hash;
+for(int i=0;i<n;i++){
+hash[a[i]]++;
+}
+set<int> st;
+st.insert()
+-----------
+(a & 1) == 0 even
+as 101010 is even last 0 matters thats why
+----------
+reverse(s.begin(),s.end())
