@@ -1,0 +1,19 @@
+def convertToBinary(n):
+   if n > 1:
+       convertToBinary(n//2)
+   print(n % 2,end = '')
+def convertToOctal(n):
+   if n > 1:
+       convertToOctal(n//8)
+   print(n % 8,end = '')
+a = 1011011011
+# the number system 2 is defined in converting string to int
+b = int(str(a),2)
+print(b)
+a = "0X1e"
+#here is hexadecimal
+b = int(a,16)
+print(b)
+convertToBinary(123)
+print()
+convertToOctal(1223432)
