@@ -43,5 +43,5 @@ def binarySearchSquareRootTillNDecimalPlaces(n,d):
             leftindex = mid+1
     return res
 if __name__ == "__main__":
-    a = binarySearchSquareRootTillNDecimalPlaces(214748364,2)
+    a = binarySearchSquareRootTillNDecimalPlaces(16876837618,6)
     print(a)
